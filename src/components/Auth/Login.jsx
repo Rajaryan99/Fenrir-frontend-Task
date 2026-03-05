@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 
 export default function Login() {
@@ -60,7 +61,7 @@ export default function Login() {
             <div className="signupForm">
             
                 <h1 className='text-6xl'>Log in</h1>
-                <p>Create new account? <a href="" className='text-blue-700'>Sign up</a></p>
+                <p>Create new account? <Link to={'/signup'} className='text-blue-700'>Sign up</Link></p>
               
   
               <div className="form">
