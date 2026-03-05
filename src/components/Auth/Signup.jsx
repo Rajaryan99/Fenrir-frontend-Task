@@ -1,9 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../assets/logo.png'
 import './Auth.css'
 
 
 export default function Signup() {
+
+
+  const [formData, setFromData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    password:""
+  })
+
+  const handleChnage = (e) => {
+    setFromData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const handleSignup = (e) => {
+    e.preventDefault()
+
+    localStorage.setItem("user", JSON.stringify(formData))
+
+    alert("Account created successfully!!")
+    setFromData("")
+  }
+
+
   return (
     <div className=" main bg-[radial-gradient(circle_at_20%_30%,rgba(12,200,168,0.25),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(255,119,0,0.35),transparent_40%),linear-gradient(135deg,#0f0f0f,#121212,#1a1a1a)] min-h-screen ">
 
@@ -37,10 +63,10 @@ export default function Signup() {
             
 
             <div className="form">
-              <input type="text" name="" id="" placeholder='First name*' />
-              <input type="text" name="" id="" placeholder='Last name*' />
-              <input type="text" name="" id="" placeholder='Email address*' />
-              <input type="password" name="" id="" placeholder='Password' />
+              <input onChange={handleChnage} type="text" name="firstName" id="" placeholder='First name*' />
+              <input onChange={handleChnage} type="text" name="lastName" id="" placeholder='Last name*' />
+              <input onChange={handleChnage} type="text" name="email" id="" placeholder='Email address*' />
+              <input onChange={handleChnage} type="password" name="password" id="" placeholder='Password' />
             </div>
             <div>
 
@@ -49,7 +75,7 @@ export default function Signup() {
               </div>
             </div>
 
-            <button className='btn'>Create account</button>
+            <button className='btn' onClick={handleSignup}>Create account</button>
         </div>
       </div>
       </div>
