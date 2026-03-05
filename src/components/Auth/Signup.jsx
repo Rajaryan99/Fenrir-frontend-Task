@@ -30,7 +30,27 @@ export default function Signup() {
       </div>
 
       <div className="rightSection">
-        <h1>Signup</h1>
+          <div className="signupForm">
+          
+              <h1 className='text-6xl'>sign up</h1>
+              <p>Already have an account? <a href="" className='text-blue-700'>Log in</a></p>
+            
+
+            <div className="form">
+              <input type="text" name="" id="" placeholder='First name*' />
+              <input type="text" name="" id="" placeholder='Last name*' />
+              <input type="text" name="" id="" placeholder='Email address*' />
+              <input type="password" name="" id="" placeholder='Password' />
+            </div>
+            <div>
+
+              <div className='terms'>
+              <input type="checkbox" /> <span>I agree to Ap's <a href="" className='text-blue-800'>Terms & Condition</a> and acknowledge the <a href="" className='text-blue-700'>Privacy Policy</a></span>
+              </div>
+            </div>
+
+            <button className='btn'>Create account</button>
+        </div>
       </div>
       </div>
     
