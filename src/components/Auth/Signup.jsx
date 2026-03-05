@@ -13,11 +13,11 @@ export default function Signup() {
 
       <div className="dashboard">
       <div className="leftsection text-white">
-        <div className='heading text-6xl leading-20'>
+          <div className='heading text-5xl leading-tight '>
           <p>Expert level Cybersecurity in <span className='text-[#4daa9b]'>Houre</span> not weeks.</p>
         </div>
-        <div className="details leading-8">
-          <h3 className='font-bold text-xl'>What's included</h3>
+        <div className="details leading-8 ">
+          <h3 className='font-bold text-xl mb-4'>What's included</h3>
           <p><i class="fa-solid fa-check text-sm text-green-500 "></i> Effortlessly spider and map targets to uncover hidden security flows</p>
           <p><i class="fa-solid fa-check text-sm text-green-500 "></i> Deliver high-quality, validated findings in hours, not weeks.</p>
           <p><i class="fa-solid fa-check text-sm text-green-500 "></i> Generated professional, enterprise-grade secuirty reports autoamtically.</p>
