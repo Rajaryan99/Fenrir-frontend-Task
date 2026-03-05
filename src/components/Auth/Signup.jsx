@@ -21,7 +21,12 @@ export default function Signup() {
           <p><i class="fa-solid fa-check text-sm text-green-500 "></i> Effortlessly spider and map targets to uncover hidden security flows</p>
           <p><i class="fa-solid fa-check text-sm text-green-500 "></i> Deliver high-quality, validated findings in hours, not weeks.</p>
           <p><i class="fa-solid fa-check text-sm text-green-500 "></i> Generated professional, enterprise-grade secuirty reports autoamtically.</p>
-        </div>
+          </div>
+          
+          <div className="review leading-loose ">
+            <p className='mb-7 text-sm '><i class="fa-solid fa-star text-xs text-green-500"></i> Trustpilot</p>
+            <h3>Rated 4.5/5.0  <span className='text-gray-600 text-xs'> (100k+ reviews)</span></h3>
+          </div>
       </div>
 
       <div className="rightSection">
