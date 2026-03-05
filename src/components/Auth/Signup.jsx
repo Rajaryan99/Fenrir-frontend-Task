@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../../assets/logo.png'
 import './Auth.css'
+import { Link } from 'react-router-dom'
 
 
 export default function Signup() {
@@ -27,6 +28,8 @@ export default function Signup() {
     alert("Account created successfully")
 
     setFromData("")
+    window.location.herf = '/login'
+
   }
 
   return (
@@ -58,7 +61,7 @@ export default function Signup() {
           <div className="signupForm">
           
               <h1 className='text-6xl'>sign up</h1>
-              <p>Already have an account? <a href="" className='text-blue-700'>Log in</a></p>
+              <p>Already have an account? <Link to={'/login'} className='text-blue-700'>Log in</Link></p>
             
 
             <div className="form">
